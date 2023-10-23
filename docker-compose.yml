@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+
+  mysql:
+    # Asignas un nombre de contenedor específico ("mysql") a este servicio.
+    container_name: mysql
+    #  Estás utilizando la imagen Docker "mysql:5.7" para este servicio.
+    image: mysql:5.7
+    # Empiezas a definir las variables de entorno para el servicio MySQL contraseña y base de datos.
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: prestashop
+    # Comienzas a definir las redes utilizadas en este servicio
+    networks:
+      - prestashop_network
+
+  prestaShop:
+    # Asignas un nombre de contenedor específico ("prestashop1") a este servicio.
+    container_name: prestashop1
+    #  Estás utilizando la imagen Docker "prestashop/prestashop:latest" para este servicio
+    image: prestashop/prestashop:latest
+    # Defines
+    ports:
+      - 8080:80
+    # Empiezas a definir las variables de entorno para el servicio prestashop base de datos, nombre de la base de datos, usuario y contraseña.
+    environment:
+      DB_SERVER: mysql
+      DB_NAME: prestashop1
+      DB_USER: root
+      DB_PASSWD: admin
+
+    # defines una red igual a la anterior para conectar ambas bases de datos
+    networks:
+      - prestashop_network
+
+
