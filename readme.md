@@ -79,6 +79,8 @@ Sigue estos pasos para configurar y ejecutar PrestaShop con Docker:
 A continuación, se incluyen capturas de pantalla para demostrar el funcionamiento:
 
 - **PrestaShop en el navegador:**
+- ![imagen](https://github.com/JorgeGonzalez-castelao/1erExamen_Docker/assets/113522749/1b5f4020-abce-46bc-b1bc-fd0ca755110e)
+
 
   
 
