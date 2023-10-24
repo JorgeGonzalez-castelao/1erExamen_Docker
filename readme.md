@@ -92,4 +92,4 @@ A continuación, se incluyen capturas de pantalla para demostrar el funcionamien
 
 - Puedes personalizar la configuración de estos servicios según tus necesidades editando el archivo `docker-compose.yml`.
 
-Disfruta de tu entorno de desarrollo de PrestaShop utilizando Docker Compose y una base de datos enlazada. Si tienes alguna pregunta o necesitas ayuda adicional, no dudes en consultar la documentación de Docker o ponerse en contacto con nosotros.
+
